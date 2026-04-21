@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfitFlow - A nyereséges vállalkozások szakértője</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Ikonkészlet a pillérekhez -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '2282836');
+    </script>
+    <!-- End MailerLite Universal -->
+
+    <style>
+        :root {
+            --primary-blue: #1A365D;
+            --growth-green: #38A169;
+            --accent-teal: #2C7A7B;
+            --bg-light: #F7FAFC;
+            --white: #FFFFFF;
+            --text-dark: #2D3748;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 12px 30px rgba(26, 54, 93, 0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* Kompaktabb Hero szekció */
+        header {
+            background: linear-gradient(135deg, var(--white) 0%, #EDFDFD 100%);
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .slogan {
+            font-size: 1.3rem;
+            background: linear-gradient(to right, var(--primary-blue), var(--accent-teal), var(--growth-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Form konténer */
+        .form-section {
+            padding: 20px 0 40px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .ml-embedded {
+            max-width: 100%;
+            width: 550px !important;
+            margin: 0 auto !important;
+        }
+
+        /* Pillérek szekció */
+        .pillars {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+
+        .grid {
+            display: grid;
+            /* Tablet és Laptop nézet: kényszerített 3 oszlop */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 40px 25px;
+            text-align: center;
+            background: var(--white);
+            border-radius: 20px;
+            border: 1px solid #F0F4F8;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-teal), var(--growth-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        /* Bemutatkozás */
+        .about-section {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+            border-top: 1px solid #E2E8F0;
+        }
+
+        .about-flex {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border: 4px solid var(--white);
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .about-text h2 {
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .about-text .credentials {
+            font-weight: 600;
+            color: var(--accent-teal);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #718096;
+            background-color: var(--white);
+            border-top: 1px solid #E2E8F0;
+        }
+
+        /* Mobil nézet finomhangolás */
+        @media (max-width: 768px) {
+            /* Tableten még marad a 3 oszlop a grid definíciója miatt, 
+               de itt állítjuk be a mobil töréspontot */
+            .grid {
+                gap: 15px;
+            }
+            .card {
+                padding: 30px 15px;
+            }
+            .card h3 {
+                font-size: 1.1rem;
+            }
+            .card p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            header { padding: 40px 0 20px; }
+            h1 { font-size: 2.2rem; }
+            .slogan { font-size: 1.1rem; }
+            
+            /* Mobil nézetben kerülnek egymás alá a dobozok */
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .about-flex { 
+                flex-direction: column; 
+                text-align: center; 
+                padding: 30px 20px;
+                gap: 25px;
+            }
+            .profile-img { width: 160px; height: 160px; }
+            .ml-embedded { width: 100% !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>ProfitFlow</h1>
+            <p class="slogan">A nyereséges vállalkozások szakértője</p>
+        </div>
+    </header>
+
+    <!-- Felső feliratkozás -->
+    <section class="form-section">
+        <div class="container">
+            <div class="ml-embedded" data-form="4vxJnr"></div>
+        </div>
+    </section>
+
+    <!-- Pillérek -->
+    <section class="pillars">
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Folyamat-stabilitás</h3>
+                    <p>Kiszámítható és átlátható működés, amely stabil alapot biztosít a fenntartható növekedéshez.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Kulturális érettség</h3>
+                    <p>A technológiai váltást támogató, elkötelezett és fejlődésre képes szervezeti kultúra kialakítása.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Digitális hatékonyság</h3>
+                    <p>Az AI és a modern digitális eszközök célzott integrálása a napi munkafolyamatok maximalizálásáért.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alsó feliratkozás -->
+    <section class="form-section">
+        <div class="container">
+            <div class="ml-embedded" data-form="4vxJnr"></div>
+        </div>
+    </section>
+
+    <!-- Bemutatkozás -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-flex">
+                <img src="https://lh3.googleusercontent.com/d/1QCuX_phY_SpVYXvxdiVII7dpG8Fs2j85" alt="Lantos Mónika" class="profile-img">
+                <div class="about-text">
+                    <h2>Lantos Mónika</h2>
+                    <p class="credentials">Programozó-közgazdász, Tréner, Coach</p>
+                    <p>A vállalkozásokat holisztikus módon közelítem meg, hiszen a fenntartható sikerhez az emberi tényező és a technológiai precizitás egyensúlya szükséges.</p>
+                    <p>Támogatom a fejlődést a folyamatok átvilágításával és fejlesztésével, a cégkultúra célzott formálásával, valamint stratégiai digitalizációs tanácsadással.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ProfitFlow - Lantos Mónika. Minden jog fenntartva. | <a href="#" style="color: inherit; text-decoration: underline;">Adatvédelmi tájékoztató</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
